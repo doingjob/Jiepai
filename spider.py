@@ -11,8 +11,8 @@ def get_page(offset):
         'keyword': '街拍',
         'autoload': 'true',
         'count': '20',
-        'cur_tab': '3',
-        'from': 'gallery',
+        'cur_tab': '1',
+        'from': 'search_tab',
     }
     url = 'https://www.toutiao.com/search_content/?' + urlencode(params)
     try:
@@ -61,5 +61,5 @@ def main(offset):
 
 
 if __name__=='__main__':
-    for i in range(1,3):
+    for i in range(0,2):
         main(i*20)
